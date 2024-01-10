@@ -3,16 +3,16 @@ import Item from "@/components/item";
 import Layout from "@/components/layout";
 import Title from "@/components/title";
 
-const Sold: NextPage = () => {
+const Purchased: NextPage = () => {
   return (
     <>
-      <Title text="판매내역"/>
-      <Layout title="판매내역" canGoBack>
+      <Title text="구매내역"/>
+      <Layout title="구매내역" canGoBack>
         <div className="flex flex-col space-y-5 pb-10  divide-y">
           {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((_, i) => (
             <Item
-              id={i}
               key={i}
+              id={i}
               title="iPhone 14"
               price={99}
               comments={1}
@@ -25,4 +25,4 @@ const Sold: NextPage = () => {
   );
 };
 
-export default Sold;
+export default Purchased;
